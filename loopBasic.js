@@ -30,5 +30,22 @@ do{
 let fruits = ["apple","banana","mango"];
 
 for(let fruit of fruits){
-    console.log(fruit);
+    // console.log(fruit);
+}
+
+let items = document.querySelectorAll("li")
+
+for(let item of items){
+    item.style.color = "red"
+    item.style.background = "green"
+    item.style.padding = "10px"
+}
+
+let buttons = document.querySelectorAll(".btn")
+
+for(let button of buttons){
+    button.addEventListener("click", function(){
+        alert("button click");
+        
+    })
 }
