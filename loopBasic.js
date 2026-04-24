@@ -49,3 +49,12 @@ for(let button of buttons){
         
     })
 }
+
+// =====================
+let list = document.getElementById("list")
+
+for(let i = 1;i <= 6;i++){
+    let li = document.createElement("li")
+    li.innerText = "LIST" + i
+    list.appendChild(li)
+}
