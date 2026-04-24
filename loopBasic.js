@@ -23,6 +23,12 @@ while(e <= 10){
 // do... while loop 
 let u = 1;
 do{
-    console.log(u);
+    // console.log(u);
     u++
 }while(u <= 6);
+
+let fruits = ["apple","banana","mango"];
+
+for(let fruit of fruits){
+    console.log(fruit);
+}
