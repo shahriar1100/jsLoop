@@ -51,13 +51,13 @@
 // }
 
 // =====================
-let list = document.getElementById("list")
+// let list = document.getElementById("list")
 
-for(let i = 1;i <= 6;i++){
-    let li = document.createElement("li")
-    li.innerText = "LIST" + i
-    list.appendChild(li)
-}
+// for(let i = 1;i <= 6;i++){
+//     let li = document.createElement("li")
+//     li.innerText = "LIST" + i
+//     list.appendChild(li)
+// }
 
 // =============================
 
@@ -94,13 +94,48 @@ for(let i = 1;i <= 6;i++){
 //       });
 //     }
 
-let buttons = document.querySelectorAll(".scoreRun");
-let total = 0;
+// let buttons = document.querySelectorAll(".scoreRun");
+// let total = 0;
 
-for(let btn of buttons){
-  btn.addEventListener("click", function(){
-    let value = parseInt(btn.innerText);
-    total += value;
-    document.getElementById("total").innerText = total;
-  });
+// for(let btn of buttons){
+//   btn.addEventListener("click", function(){
+//     let value = parseInt(btn.innerText);
+//     total += value;
+//     document.getElementById("total").innerText = total;
+//   });
+// }
+
+
+// let list = document.getElementById("list");
+
+// for(let i = 1; i <= 6; i++){
+//     let li = document.createElement("li");
+//     li.innerText = "Item" + i;
+
+//     let btn = document.createElement("button");
+//     btn.innerText = "DELETE"
+
+//     btn.addEventListener("click", function (){
+//         li.remove();
+//     });
+
+//     li.appendChild(btn)
+//     list.appendChild(li)
+// }
+
+let list = document.getElementById("list")
+
+for(let i =1;i <= 6; i++){
+    let li = document.createElement("li");
+    li.innerText = "Item" + i;
+
+    let btn = document.createElement("button");
+    btn.innerText = "Delete"
+
+    btn.addEventListener("click",()=> {
+        li.remove()
+    })
+
+    li.appendChild(btn)
+    list.appendChild(li)
 }
