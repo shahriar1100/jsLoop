@@ -123,19 +123,37 @@
 //     list.appendChild(li)
 // }
 
+// let list = document.getElementById("list")
+
+// for(let i =1;i <= 6; i++){
+//     let li = document.createElement("li");
+//     li.innerText = "Item" + i;
+
+//     let btn = document.createElement("button");
+//     btn.innerText = "Delete"
+
+//     btn.addEventListener("click",()=> {
+//         li.remove()
+//     })
+
+//     li.appendChild(btn)
+//     list.appendChild(li)
+// }
+
+
 let list = document.getElementById("list")
 
-for(let i =1;i <= 6; i++){
-    let li = document.createElement("li");
-    li.innerText = "Item" + i;
+for(let i = 1; i <= 6; i++){
+    let li = document.createElement("li")
+    li.innerText = "Item" + i
 
-    let btn = document.createElement("button");
-    btn.innerText = "Delete"
+    let btn = document.createElement("button")
+    btn.innerText = "delete"
 
-    btn.addEventListener("click",()=> {
+    btn.addEventListener("click", function (){
         li.remove()
     })
 
-    li.appendChild(btn)
     list.appendChild(li)
+    li.appendChild(btn)
 }
